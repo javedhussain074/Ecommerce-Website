@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Account Page - Live Life Shop</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <div class="product-header">
+    <div class="block">
+        <div class="navbar">
+                <div class="logo">
+                    <a href="index.html"><img src="image/logo 1.png" alt="logo" width="140px" height="60px"></a>
+                </div>
+                <nav class="nav">
+                    <ul class="nav ul">
+                        <li> <a href="index.html">Home</a> </li>
+                        <li> <a href="product.html">Products</a> </li>
+                        <li> <a href="about-us.html">About Us</a> </li>
+                        <li> <a href="contact-us.html">Contact Us</a> </li>
+                        <li> <a href="account.html">Account</a> </li>
+                        <li> <a href="cart.html">My Cart</a> </li>
+                        <input type="text" placeholder="search.." name="Search">
+                        <button type="submit"><i class="fa fa-search"></i></button>
+                    </ul>
+                </nav> 
+        </div>
+
+       <div class="account-page">
+           <div class="account-block">
+               <div class="row">
+                   <div class="colm">
+                       <img src="image/shop-main.png" width="100%" alt="picture">
+                   </div>
+                   <div class="colm">
+                    <div class="form-block">
+                        <div class="form-btn">
+                            <span onclick="login()">Login</span>
+                            <span onclick="register()">Register</span>
+                            <hr id="Indicator">
+                        </div>
+                        <form id="LoginForm">
+                            <input type="text" placeholder="Username">
+                            <input type="password" placeholder="Password">
+                            <button type="submit" class="btn">Login</button>
+                            <a href="">Forgot Password</a>
+                        </form>
+                        <form id="RegisForm">
+                            <input type="text" placeholder="Username">
+                            <input type="email" placeholder="Email">
+                            <input type="password" placeholder="Password">
+                            <button type="submit" class="btn">Register</button>
+                        </form>
+                    </div>
+                </div>
+               </div>
+           </div>
+       </div>
+     
+       <a href="index.html">
+        <div class="nav-footer">
+            <span class="nav-footer-back-to-top">Back To Top</span>
+        </div>
+    </a>
+    <div class="footer">
+        <div class="footer-block">
+            <div class="footer-row">
+                <div class="footer-colm-1">
+                    <h3>Download Our App</h3>
+                    <p>Download App for Android and ios mobile phone</p>
+                    <div class="app-logo">
+                        <img src="image/play-store.png" alt="play store logo">
+                        <img src="image/app-store.png" alt="app store logo">
+                    </div>
+                    <p class="address">
+                        <p1>Contact Us<p1><br><br>
+                            <p2>
+                                Live Life Shop Pvt. Ltd.<br>Jannat Apartment, Okhla, Batla House,
+                                <br>New Delhi -110025<br>E-mail : livelifeshop@gmail.com<br>Telephone : 1800 202 9898
+                            </p2>
+                    </p>
+                </div>
+                <div class="footer-colm-2">
+                    <h3>About Us</h3>
+                    <p>Our Pupose Is To Sustainably Make Life easier and Shop with best price.</p>
+                </div>
+
+                <div class="footer-colm-3">
+                    <h3>Policy</h3>
+                    <ul>
+                        <li>Privacy</li>
+                        <li>Security</li>
+                        <li>Term of use</li>
+                        <li>Return Policy</li>
+                    </ul>
+                </div>
+                <div class="footer-colm-4">
+                    <h3>Social</h3>
+                    <ul>
+                        <li>Twitter</li>
+                        <li>Youtube</li>
+                        <li>Facebook</li>
+                        <li>Instagram</li>
+                    </ul>
+                </div>
+                <div class="footer-colm-5">
+                    <h3>Help</h3>
+                    <ul>
+                        <li>FAQ</li>
+                        <li>Payments</li>
+                        <li>Shipping</li>
+                        <li>Cancellation & Return</li>  
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <p class="copyright">Copyright 2021 - Mini Project</p>
+        </div>
+    </div>
+
+    <script>
+        var LoginForm = document.getElementById("LoginForm");
+        var RegisForm = document.getElementById("RegisForm");
+        var Indicator = document.getElementById("Indicator");
+
+            function register()
+            {
+                RegisForm.style.transform = "translateX(0px)";
+                LoginForm.style.transform = "translateX(0px)";
+                Indicator.style.transform = "translateX(100px)";
+            }
+
+            function login()
+            {
+                RegisForm.style.transform = "translateX(300px)";
+                LoginForm.style.transform = "translateX(300px)";
+                Indicator.style.transform = "translateX(0px)";
+            }
+    </script>
+
+</body>
+</html>
